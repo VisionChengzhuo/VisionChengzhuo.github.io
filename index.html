@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal homepage of Chengzhuo Tong, Peking University.">
+    <title>Chengzhuo Tong - Homepage</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="masthead">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__brand" href="#about-me">Homepage</a>
+        <a href="#about-me">About Me</a>
+        <a href="#educations">Educations</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#miscellaneous">Miscellaneous</a>
+      </nav>
+    </header>
+
+    <main id="main" class="layout">
+      <aside class="sidebar">
+        <section class="profile" aria-label="Profile">
+          <img class="profile__avatar" src="assets/profile.png" alt="Chengzhuo Tong portrait">
+          <h1 class="profile__name">Chengzhuo Tong</h1>
+          <p class="profile__bio">Peking University</p>
+          <p class="profile__tagline">Visual Generation / Multimodal Reasoning / RL</p>
+
+          <ul class="profile__links">
+            <li><a href="mailto:2844691863@qq.com">Email</a></li>
+            <li><a href="https://github.com/VisionChengzhuo">Github</a></li>
+            <li><a href="https://scholar.google.com/citations?user=dvG1nhgAAAAJ&amp;hl=zh-CN&amp;oi=ao">Google Scholar</a></li>
+            <li><span>WeChat: Tb194910</span></li>
+          </ul>
+        </section>
+      </aside>
+
+      <article class="content">
+        <span class="anchor" id="about-me"></span>
+        <section>
+          <h2>Biography</h2>
+          <p>
+            I am an M.S. student at the School of Mathematical Sciences, Peking University.
+            I am one cohort junior in the same PKU mathematics graduate track as Ruichuan An.
+            Previously, I studied Artificial Intelligence at Xidian University as a 2022 cohort student.
+          </p>
+          <p>
+            My research focuses on visual generation, multimodal reasoning, vision-language models,
+            and reinforcement learning for image generation. I am especially interested in how visual
+            reasoning can make generative models more controllable, interpretable, and reliable.
+          </p>
+
+          <div class="research-note">
+            <h3>AI Researcher</h3>
+            <p>
+              I work on next-generation multimodal generative models, with recent projects spanning
+              video-model reasoning for text-to-image generation, subject-driven image generation,
+              and reinforcement learning for visual CoT.
+            </p>
+          </div>
+
+          <h3>Contact Info</h3>
+          <ul class="plain-list">
+            <li><strong>Address:</strong> Peking University, Beijing, China</li>
+            <li><strong>Email:</strong> <a href="mailto:2844691863@qq.com">2844691863@qq.com</a></li>
+            <li><strong>WeChat:</strong> Tb194910</li>
+            <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=dvG1nhgAAAAJ&amp;hl=zh-CN&amp;oi=ao">Chengzhuo Tong</a></li>
+          </ul>
+        </section>
+
+        <span class="anchor" id="educations"></span>
+        <section>
+          <h2>Educations</h2>
+          <ul class="education-list">
+            <li>
+              <span class="edu-logo">PKU</span>
+              <span><strong>Peking University</strong> (2026.09-2028.09) M.S. in Mathematics, School of Mathematical Sciences</span>
+            </li>
+            <li>
+              <span class="edu-logo edu-logo--warm">XDU</span>
+              <span><strong>Xidian University</strong> (2022.09-2026.06) B.Eng. in Artificial Intelligence</span>
+            </li>
+          </ul>
+        </section>
+
+        <span class="anchor" id="news"></span>
+        <section>
+          <h2>News</h2>
+          <div class="news-box">
+            <p><strong>[06.2026]</strong> Scone was accepted by CVPR 2026 as a Highlight paper.</p>
+            <p><strong>[05.2026]</strong> CoF-T2I was accepted by ICML 2026.</p>
+            <p><strong>[09.2025]</strong> Delving into RL for Image Generation with CoT was accepted by NeurIPS 2025.</p>
+            <p><strong>[06.2025]</strong> Let's Verify and Reinforce Image Generation Step by Step appeared at CVPR 2025.</p>
+            <p><strong>[01.2025]</strong> MAVIS was accepted by ICLR 2025.</p>
+          </div>
+        </section>
+
+        <span class="anchor" id="publications"></span>
+        <section>
+          <h2>Publications</h2>
+          <h3>Selected publications/preprints</h3>
+
+          <div class="paper-box">
+            <div class="paper-box__image">
+              <span class="badge">ICML 2026</span>
+              <img src="assets/paper-cof-t2i.jpg" alt="CoF-T2I thumbnail">
+            </div>
+            <div class="paper-box__text">
+              <p><strong>CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation</strong></p>
+              <ul>
+                <li><strong>Chengzhuo Tong*</strong>, Mingkun Chang*, Shenglong Zhang, Yuran Wang, Cheng Liang, Zhizheng Zhao, Ruichuan An, Bohan Zeng, Yang Shi, Yifan Dai, Ziming Zhao, Guanbin Li, Pengfei Wan, Yuanxing Zhang, Wentao Zhang</li>
+                <li>International Conference on Machine Learning, 2026.</li>
+                <li><a href="https://arxiv.org/abs/2601.10061">[Paper]</a> <a href="https://cof-t2i.github.io/">[Project]</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="paper-box">
+            <div class="paper-box__image">
+              <span class="badge badge--teal">CVPR 2026</span>
+              <img src="assets/paper-scone.jpg" alt="Scone thumbnail">
+            </div>
+            <div class="paper-box__text">
+              <p><strong>Scone: Bridging Composition and Distinction in Subject-Driven Image Generation via Unified Understanding-Generation Modeling</strong></p>
+              <ul>
+                <li>Yuran Wang*, Bohan Zeng*, <strong>Chengzhuo Tong</strong>, Wenxuan Liu, Yang Shi, Xiaochen Ma, Hao Liang, Yuanxing Zhang, Wentao Zhang</li>
+                <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026. Highlight.</li>
+                <li><a href="https://arxiv.org/abs/2512.12675">[Paper]</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="paper-box">
+            <div class="paper-box__image">
+              <span class="badge badge--violet">NeurIPS 2025</span>
+              <img src="assets/paper-rlcot.jpg" alt="RL for image generation thumbnail">
+            </div>
+            <div class="paper-box__text">
+              <p><strong>Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO</strong></p>
+              <ul>
+                <li><strong>Chengzhuo Tong</strong>, Ziyu Guo, Renrui Zhang, Wenyu Shan, Xinyu Wei, Zhenghao Xing, Hongsheng Li, Pheng-Ann Heng</li>
+                <li>Conference on Neural Information Processing Systems, 2025.</li>
+                <li><a href="https://arxiv.org/abs/2505.17017">[Paper]</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="paper-box">
+            <div class="paper-box__image">
+              <span class="badge badge--orange">CVPR 2025</span>
+              <img src="assets/paper-verify.jpg" alt="Visual CoT verification thumbnail">
+            </div>
+            <div class="paper-box__text">
+              <p><strong>Let's Verify and Reinforce Image Generation Step by Step</strong></p>
+              <ul>
+                <li>Renrui Zhang*, <strong>Chengzhuo Tong*</strong>, Zhizheng Zhao*, Ziyu Guo*, Haoquan Zhang, Manyuan Zhang, Jiaming Liu, Peng Gao, Hongsheng Li</li>
+                <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.</li>
+                <li><a href="https://arxiv.org/abs/2501.13926">[Paper]</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="paper-box">
+            <div class="paper-box__image">
+              <span class="badge badge--navy">ICLR 2025</span>
+              <img src="assets/paper-mavis.jpg" alt="MAVIS thumbnail">
+            </div>
+            <div class="paper-box__text">
+              <p><strong>MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine</strong></p>
+              <ul>
+                <li>Renrui Zhang*, Xinyu Wei*, Dongzhi Jiang, Ziyu Guo, Yichi Zhang, <strong>Chengzhuo Tong</strong>, Jiaming Liu, Aojun Zhou, Shanghang Zhang, Peng Gao, Hongsheng Li</li>
+                <li>International Conference on Learning Representations, 2025.</li>
+                <li><a href="https://arxiv.org/abs/2407.08739">[Paper]</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <span class="anchor" id="miscellaneous"></span>
+        <section>
+          <h2>Miscellaneous</h2>
+          <p>
+            I am always happy to discuss visual generation, multimodal reasoning, and possible
+            collaborations. Please feel free to contact me by email or WeChat.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>Copyright &copy; 2026 Chengzhuo Tong. Built for Github Pages.</p>
+    </footer>
+  </body>
+</html>
