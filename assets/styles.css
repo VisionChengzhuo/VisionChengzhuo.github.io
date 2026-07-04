@@ -1,16 +1,17 @@
 :root {
   --navy: #012f63;
   --navy-soft: #e9f0f7;
-  --pink: #fe667b;
-  --teal: #20798c;
-  --violet: #7c58ba;
-  --orange: #ee7d40;
-  --text: #12345a;
-  --muted: #5b6f87;
-  --border: rgba(1, 47, 99, 0.12);
+  --pink: #ec707d;
+  --venue: rgb(108, 149, 181);
+  --teal: rgb(108, 149, 181);
+  --violet: #8a7fbb;
+  --orange: #ec707d;
+  --text: #012f63;
+  --muted: #41638a;
+  --border: rgba(108, 149, 181, 0.24);
   --shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.09);
-  --surface: linear-gradient(145deg, #ffffff, #f8fafc);
+  --surface: linear-gradient(145deg, #ffffff, #f8f9fa);
   --radius: 10px;
 }
 
@@ -28,6 +29,7 @@ html {
 body {
   margin: 0;
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+  color: var(--text);
   line-height: 1.55;
 }
 
@@ -68,7 +70,7 @@ img {
 
 .masthead {
   background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(108, 149, 181, 0.22);
   position: sticky;
   top: 0;
   z-index: 20;
@@ -90,6 +92,10 @@ img {
   font-size: 0.98rem;
   line-height: 1.4;
   white-space: nowrap;
+}
+
+.nav a:hover {
+  color: var(--pink);
 }
 
 .nav__brand {
@@ -272,11 +278,11 @@ p {
 }
 
 .edu-logo--warm {
-  background: var(--orange);
+  background: var(--pink);
 }
 
 .news-box p {
-  border-bottom: 1px solid rgba(1, 47, 99, 0.08);
+  border-bottom: 1px solid rgba(108, 149, 181, 0.16);
   margin: 0;
   padding: 0.45rem 0;
 }
@@ -357,19 +363,19 @@ p {
 }
 
 .badge--teal {
-  background: var(--teal);
+  background: var(--venue);
 }
 
 .badge--violet {
-  background: var(--violet);
+  background: var(--pink);
 }
 
 .badge--orange {
-  background: var(--orange);
+  background: var(--pink);
 }
 
 .badge--navy {
-  background: var(--navy);
+  background: var(--venue);
 }
 
 .paper-box__text p {
@@ -379,7 +385,7 @@ p {
 }
 
 .footer {
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid rgba(108, 149, 181, 0.22);
   color: var(--muted);
   font-size: 0.9rem;
   margin: 0 auto;
