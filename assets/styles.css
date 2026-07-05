@@ -328,20 +328,12 @@ p {
 }
 
 .edu-logo {
-  align-items: center;
-  background: var(--navy);
-  border-radius: 4px;
-  color: white;
-  display: inline-flex;
-  flex: 0 0 38px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  height: 24px;
-  justify-content: center;
-}
-
-.edu-logo--warm {
-  background: var(--pink);
+  display: inline-block;
+  flex: 0 0 22px;
+  height: 22px;
+  object-fit: contain;
+  vertical-align: middle;
+  width: 22px;
 }
 
 .news-box p {
