@@ -477,6 +477,65 @@ p {
   z-index: 1;
 }
 
+.publication-list {
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.97), rgba(248, 251, 255, 0.92));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0.85rem 1.1rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+}
+
+.publication-list::before {
+  background: linear-gradient(135deg, rgba(var(--pink-rgb), 0.38), rgba(var(--venue-rgb), 0.28));
+  border-radius: inherit;
+  content: "";
+  inset: 0;
+  opacity: 0.62;
+  padding: 1px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.publication-list li {
+  border-bottom: 1px solid rgba(var(--venue-rgb), 0.15);
+  margin: 0;
+  padding: 0.78rem 0;
+  position: relative;
+  transition: transform 0.2s ease;
+  z-index: 1;
+}
+
+.publication-list li:hover {
+  transform: translateX(5px);
+}
+
+.publication-list li:last-child {
+  border-bottom: 0;
+}
+
+.publication-list p {
+  color: var(--navy);
+  margin: 0 0 0.25rem;
+}
+
+.publication-list span {
+  color: var(--muted);
+  display: block;
+  line-height: 1.48;
+}
+
+.publication-list strong {
+  color: var(--navy);
+}
+
 .footer {
   border-top: 1px solid rgba(108, 149, 181, 0.22);
   color: var(--muted);
