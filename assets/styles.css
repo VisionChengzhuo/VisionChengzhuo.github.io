@@ -106,7 +106,51 @@ img {
 
 .nav__brand {
   font-weight: 700;
-  margin-right: 1.25rem;
+}
+
+.nav__links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1.4rem;
+  margin-left: 1.25rem;
+}
+
+.language-switcher {
+  align-items: center;
+  background: rgba(var(--venue-rgb), 0.1);
+  border: 1px solid rgba(var(--venue-rgb), 0.25);
+  border-radius: 999px;
+  display: flex;
+  margin-left: auto;
+  padding: 0.18rem;
+}
+
+.language-switcher__button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 2.65rem;
+  padding: 0.48rem 0.66rem;
+  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.language-switcher__button.is-active {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(22, 45, 72, 0.13);
+  color: var(--navy);
+}
+
+.language-switcher__button:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
 }
 
 .layout {
@@ -278,6 +322,112 @@ p {
   margin: 1.1rem 0;
   padding: 1rem 1.15rem;
   backdrop-filter: blur(8px);
+}
+
+.thinking-section__header {
+  margin-bottom: 1.15rem;
+}
+
+.thinking-section__header h2 {
+  margin-bottom: 0.55rem;
+}
+
+.section-kicker {
+  color: var(--pink);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin: 0 0 0.4rem 0.15rem;
+  text-transform: uppercase;
+}
+
+.section-lead {
+  color: var(--muted);
+  font-size: 1.03rem;
+  max-width: 760px;
+}
+
+.thesis-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.thesis-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.95rem;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 3.2rem minmax(0, 1fr);
+  overflow: hidden;
+  padding: 1.2rem 1.3rem;
+  position: relative;
+}
+
+.thesis-card::before {
+  background: linear-gradient(180deg, var(--pink), var(--venue));
+  content: "";
+  inset: 0 auto 0 0;
+  position: absolute;
+  width: 4px;
+}
+
+.thesis-card__number {
+  color: rgba(var(--venue-rgb), 0.65);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  padding-top: 0.16rem;
+}
+
+.thesis-card__content h3 {
+  font-size: 1.22rem;
+  margin: 0 0 0.75rem;
+  padding-left: 0;
+}
+
+.thesis-card__content h3::before {
+  display: none;
+}
+
+.thesis-card__conclusion {
+  background: linear-gradient(110deg, rgba(var(--pink-rgb), 0.1), rgba(var(--venue-rgb), 0.09));
+  border-radius: 0.65rem;
+  margin: 0.95rem 0 0;
+  padding: 0.78rem 0.9rem;
+}
+
+.thesis-points {
+  counter-reset: thesis-point;
+  list-style: none;
+  margin: 0.65rem 0 0;
+  padding: 0;
+}
+
+.thesis-points li {
+  counter-increment: thesis-point;
+  margin: 0.5rem 0;
+  padding-left: 1.85rem;
+  position: relative;
+}
+
+.thesis-points li::before {
+  align-items: center;
+  background: rgba(var(--venue-rgb), 0.14);
+  border-radius: 50%;
+  color: var(--navy);
+  content: counter(thesis-point);
+  display: flex;
+  font-size: 0.72rem;
+  font-weight: 700;
+  height: 1.25rem;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0.22rem;
+  width: 1.25rem;
 }
 
 .content p a,
@@ -501,6 +651,11 @@ p {
     position: static;
   }
 
+  .anchor {
+    height: 7.2rem;
+    margin-top: -7.2rem;
+  }
+
   .profile {
     border-bottom: 1px solid var(--border);
     margin-bottom: 1.7rem;
@@ -529,13 +684,28 @@ p {
   }
 
   .nav {
-    gap: 0.25rem 0.9rem;
+    display: grid;
+    gap: 0.45rem 0.9rem;
+    grid-template-columns: 1fr auto;
     padding: 0.5rem 0.9rem;
   }
 
   .nav__brand {
-    flex-basis: 100%;
-    margin-right: 0;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .nav__links {
+    gap: 0.25rem 0.9rem;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-left: 0;
+  }
+
+  .language-switcher {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 0;
   }
 }
 
@@ -555,5 +725,15 @@ p {
 
   .paper-box {
     padding: 1rem;
+  }
+
+  .thesis-card {
+    gap: 0.55rem;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem 1rem 1.15rem;
+  }
+
+  .thesis-card__number {
+    font-size: 1rem;
   }
 }
