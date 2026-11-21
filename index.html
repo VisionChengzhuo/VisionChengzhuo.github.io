@@ -3,26 +3,77 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal homepage of Chengzhuo Tong, Peking University.">
-    <title>Chengzhuo Tong - Homepage</title>
+    <meta name="description" content="Chengzhuo Tong (童成卓) — M.S. student at Peking University, research intern at Kuaishou Kling AI. Embodied AGI, robot learning, scalable simulation, real-world deployment. Frontier LLMs as the brain of robots; code as the interface.">
+    <title>Chengzhuo Tong (童成卓) · Robot Learning and Embodied AGI</title>
+    <link rel="canonical" href="https://visionchengzhuo.github.io/">
+    <link rel="alternate" hreflang="en" href="https://visionchengzhuo.github.io/">
+    <link rel="alternate" hreflang="zh" href="https://visionchengzhuo.github.io/zh/">
+    <link rel="alternate" hreflang="x-default" href="https://visionchengzhuo.github.io/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Chengzhuo Tong (童成卓) · Robot Learning and Embodied AGI">
+    <meta property="og:description" content="Chengzhuo Tong (童成卓) — M.S. student at Peking University, research intern at Kuaishou Kling AI. Embodied AGI, robot learning, scalable simulation, real-world deployment. Frontier LLMs as the brain of robots; code as the interface.">
+    <meta property="og:url" content="https://visionchengzhuo.github.io/">
+    <meta property="og:image" content="https://visionchengzhuo.github.io/assets/profile.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chengzhuo Tong (童成卓) · Robot Learning and Embodied AGI">
+    <meta name="twitter:description" content="Chengzhuo Tong (童成卓) — M.S. student at Peking University, research intern at Kuaishou Kling AI. Embodied AGI, robot learning, scalable simulation, real-world deployment. Frontier LLMs as the brain of robots; code as the interface.">
+    <meta name="twitter:url" content="https://visionchengzhuo.github.io/">
+    <meta name="twitter:image" content="https://visionchengzhuo.github.io/assets/profile.png">
     <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/language.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://visionchengzhuo.github.io/#person",
+        "name": "Chengzhuo Tong",
+        "alternateName": "童成卓",
+        "url": "https://visionchengzhuo.github.io/",
+        "image": "https://visionchengzhuo.github.io/assets/profile.png",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Peking University"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Kuaishou Kling AI"
+        },
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "Xidian University"
+        },
+        "knowsAbout": [
+          "Embodied AGI",
+          "Robot Learning",
+          "Reinforcement Learning",
+          "Scalable Simulation",
+          "Real-World Deployment",
+          "Large Language Models",
+          "Text-to-Image Generation"
+        ],
+        "sameAs": [
+          "https://x.com/selfcarveddecay",
+          "https://github.com/VisionChengzhuo",
+          "https://scholar.google.com/citations?user=dvG1nhgAAAAJ&hl=zh-CN&oi=ao"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="masthead">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="nav__brand" href="#about-me" data-i18n="nav-home">Homepage</a>
+        <a class="nav__brand" href="#about-me">Homepage</a>
         <div class="nav__links">
-          <a href="#about-me" data-i18n="nav-about">About Me</a>
-          <a href="#educations" data-i18n="nav-education">Education</a>
-          <a href="#thinking" data-i18n="nav-thinking">Thinking</a>
-          <a href="#news" data-i18n="nav-news">News</a>
-          <a href="#publications" data-i18n="nav-publications">Publications</a>
-          <a href="#miscellaneous" data-i18n="nav-miscellaneous">Connect</a>
+          <a href="#about-me">About Me</a>
+          <a href="#educations">Education</a>
+          <a href="#thinking">Thinking</a>
+          <a href="#open-questions">Open Questions</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#miscellaneous">Connect</a>
         </div>
         <div class="language-switcher" role="group" aria-label="Language">
-          <button class="language-switcher__button is-active" type="button" data-language="en" aria-pressed="true">EN</button>
-          <button class="language-switcher__button" type="button" data-language="zh" aria-pressed="false">中文</button>
+          <a class="language-switcher__button" href="./" lang="en" hreflang="en" aria-current="page">EN</a>
+          <a class="language-switcher__button" href="zh/" lang="zh" hreflang="zh">中文</a>
         </div>
       </nav>
     </header>
@@ -31,17 +82,22 @@
       <aside class="sidebar">
         <section class="profile" aria-label="Profile">
           <img class="profile__avatar" src="assets/profile.png" alt="Chengzhuo Tong portrait">
-          <h1 class="profile__name">Chengzhuo Tong</h1>
-          <p class="profile__bio" data-i18n="profile-affiliation">Peking University</p>
-          <p class="profile__tagline" data-i18n="profile-tagline">AGI / World Action Models / Embodied Intelligence</p>
+          <h1 class="profile__name">Chengzhuo Tong <span lang="zh">童成卓</span></h1>
+          <p class="profile__bio">Peking University</p>
+          <p class="profile__tagline">
+            Robotics RL · Scalable Sim · Real-world Deployment
+            <span class="profile__motto">Hardware is part of the algorithm.</span>
+          </p>
 
           <div class="profile__contact">
-            <h3 data-i18n="contact-title">Contact Info</h3>
+            <h3>Contact Info</h3>
             <ul class="plain-list">
-              <li data-i18n="contact-address"><strong>Address:</strong> Peking University, Beijing, China</li>
-              <li data-i18n="contact-email"><strong>Email:</strong> <a href="mailto:2844691863@qq.com">2844691863@qq.com</a></li>
-              <li data-i18n="contact-wechat"><strong>WeChat:</strong> Tb194910</li>
-              <li data-i18n="contact-scholar"><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=dvG1nhgAAAAJ&amp;hl=zh-CN&amp;oi=ao">Chengzhuo Tong</a></li>
+              <li><strong>Address:</strong> Peking University, Beijing, China</li>
+              <li><strong>Email:</strong> <a href="mailto:2844691863@qq.com">2844691863@qq.com</a></li>
+              <li><strong>WeChat:</strong> Tb194910</li>
+              <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=dvG1nhgAAAAJ&amp;hl=zh-CN&amp;oi=ao">Chengzhuo Tong</a></li>
+              <li><strong>X:</strong> <a href="https://x.com/selfcarveddecay">@selfcarveddecay</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/VisionChengzhuo">VisionChengzhuo</a></li>
             </ul>
           </div>
         </section>
@@ -50,47 +106,28 @@
       <article class="content">
         <span class="anchor" id="about-me"></span>
         <section>
-          <h2 data-i18n="biography-title">Biography</h2>
-          <p data-i18n="biography-education">
-            I am an incoming master student at <a href="https://english.pku.edu.cn/"><strong>Peking University</strong></a>, where I am co-supervised by
-            <a href="https://zwt233.github.io/"><strong>Wentao Zhang</strong></a> and
-            <a href="https://scholar.google.com/citations?user=i2mOt14AAAAJ&amp;hl=en"><strong>Weinan E</strong></a>
-            at <a href="https://www.aais.pku.edu.cn/"><strong>AAIS</strong></a>. I also closely work with
-            <a href="https://scholar.google.com/citations?hl=en&amp;user=YlL3xN4AAAAJ&amp;view_op=list_works&amp;sortby=pubdate"><strong>Renrui Zhang</strong></a>.
-          </p>
-          <p data-i18n="biography-research">
-            Since June 2025, I have been a research intern at <a href="https://klingai.kuaishou.com/"><strong>Kuaishou Kling AI</strong></a>. Previously,
-            my work mainly focused on <strong>text-to-image (T2I) generation</strong>. I am now most interested in
-            <strong>World Action Models (WAM)</strong> and a broader question: how AGI can move from the digital
-            world into the physical one. My long-term goal is to build a recursive improvement flywheel in the
-            physical world: use AGI to create better robots, then use those robots to accelerate the experiments,
-            data, and manufacturing that create the next generation of robots and intelligence.
-          </p>
+          <h2>Biography</h2>
+          <p>I am a first-year master's student at <a href="https://english.pku.edu.cn/"><strong>Peking University</strong></a>, co-supervised by <a href="https://zwt233.github.io/"><strong>Wentao Zhang</strong></a> and <a href="https://scholar.google.com/citations?user=i2mOt14AAAAJ&amp;hl=en"><strong>Weinan E</strong></a> at <a href="https://www.aais.pku.edu.cn/"><strong>AAIS</strong></a>. I also work closely with <a href="https://scholar.google.com/citations?hl=en&amp;user=YlL3xN4AAAAJ&amp;view_op=list_works&amp;sortby=pubdate"><strong>Renrui Zhang</strong></a>.</p>
+          <p>Since June 2025, I have been a research intern at <a href="https://klingai.kuaishou.com/"><strong>Kuaishou Kling AI</strong></a>. My published work is mainly on <strong>text-to-image generation</strong>. My focus now is robot learning, under one bet: <strong>frontier LLMs will become the brain of robots. They will act by writing and calling code. What robot builders must own is everything the model cannot ship: hardware, simulation, and deployment.</strong></p>
 
           <div class="research-note">
-            <h3 data-i18n="physical-world-title">Opening the Physical World to AGI</h3>
-            <p data-i18n="physical-world-body">
-              <strong>My vision is not only for AGI to serve humanity, but also for humanity to serve AGI—by
-              building everything it needs to act and improve in the physical world.</strong> First, make the
-              physical world legible and operable to AGI—an <strong>“MCP for the physical world.”</strong> Then
-              build embodied AGI that can experiment, manufacture, reshape the world, and <strong>help create a
-              more capable next generation of embodied AGI.</strong>
-            </p>
+            <h3>Opening the Physical World to AGI</h3>
+            <p><strong>The physical world was built for human hands and eyes. I want to rebuild its interfaces for agents.</strong> First, make robots and factories legible and callable: hardware as a command line, an <strong>"MCP for the physical world."</strong> Then close the loop: embodied agents that run experiments, repair their own hardware and production lines, and <strong>help build the next generation of themselves.</strong></p>
           </div>
 
         </section>
 
         <span class="anchor" id="educations"></span>
         <section>
-          <h2 data-i18n="education-title">Education</h2>
+          <h2>Education</h2>
           <ul class="education-list">
             <li>
               <img class="edu-logo" src="assets/logo-pku.svg" alt="Peking University logo">
-              <span data-i18n="education-pku"><strong>Peking University</strong> (2026.09-2028.09) M.S. in Mathematics</span>
+              <span><strong>Peking University</strong> (2026.09-2028.09) M.S. in Mathematics</span>
             </li>
             <li>
               <img class="edu-logo" src="assets/logo-xdu.png" alt="Xidian University logo">
-              <span data-i18n="education-xdu"><strong>Xidian University</strong> (2022.09-2026.06) B.Eng. in Artificial Intelligence</span>
+              <span><strong>Xidian University</strong> (2022.09-2026.06) B.Eng. in Artificial Intelligence</span>
             </li>
           </ul>
         </section>
@@ -98,83 +135,78 @@
         <span class="anchor" id="thinking"></span>
         <section class="thinking-section" aria-labelledby="thinking-title">
           <header class="thinking-section__header">
-            <p class="section-kicker" data-i18n="thinking-kicker">CURRENT THESES</p>
-            <h2 id="thinking-title" data-i18n="thinking-title">What I’m Thinking About</h2>
-            <p class="section-lead" data-i18n="thinking-lead">
-              Two connected ideas guide what I want to build: intelligence should improve its own production loop,
-              and embodiment is what closes that loop in the physical world.
-            </p>
+            <p class="section-kicker">CURRENT BETS · UPDATED NOV 2026</p>
+            <h2 id="thinking-title">What I’m Thinking About</h2>
+            <p class="section-lead">Three bets about how AGI enters the physical world. They are dated because I expect to revise them.</p>
           </header>
 
           <div class="thesis-list">
             <article class="thesis-card">
               <div class="thesis-card__number" aria-hidden="true">01</div>
               <div class="thesis-card__content">
-                <h3 data-i18n="flywheel-title">The Iteration Flywheel</h3>
-                <p data-i18n="flywheel-definition">
-                  Automation reproduces the same output to a fixed standard. Intelligence is different: what it
-                  produces can keep improving, and each generation becomes an input to the next.
-                </p>
-                <p data-i18n="flywheel-coding">
-                  Math and coding have advanced quickly because they offer scalable, verifiable rewards. Coding adds
-                  a recursive advantage: better coding agents help build the next generation of models, which in
-                  turn produce still better coding agents.
-                </p>
-                <p class="thesis-card__conclusion" data-i18n="flywheel-conclusion">
-                  I want to bring this flywheel into physical production: AGI builds better robots; those robots
-                  expand experimentation and manufacturing; that capacity helps build the next generation.
-                  <strong>Build robots that help build better robots.</strong>
-                </p>
+                <h3>Frontier LLMs Will Be the Robot's Brain</h3>
+                <p>Embodied AI is at its GPT-3 moment. I expect high-level reasoning and skill-level control (System 2 and System 1) to merge into one frontier model, instead of staying a separate robot-specific stack. Like computer use, the model layer of robotics then becomes winner-take-most.</p>
+                <p><strong>What would change my mind:</strong> contact-rich manipulation, touch, and millisecond-level control. If specialized robot models keep a durable lead there while frontier models scale, "one model" goes less far than I think.</p>
               </div>
             </article>
 
             <article class="thesis-card">
               <div class="thesis-card__number" aria-hidden="true">02</div>
               <div class="thesis-card__content">
-                <h3 data-i18n="embodiment-title">Embodiment Is a Precondition for AGI</h3>
-                <p data-i18n="embodiment-intro">
-                  Embodiment is usually framed as a downstream application of AGI. I see it as part of the path to
-                  AGI itself, for three reasons:
-                </p>
+                <h3>Code Is the Universal Representation</h3>
+                <p>Code is compact, composable, and checkable, and it is what frontier models are best at.</p>
+                <p><strong>For action:</strong> robotics is in a cold-start era with little action data. A policy that is <em>written</em> and verified in simulation starts from what the model already knows, not from zero. Simulation is to robot code what tests are to software: it makes the reward scalable and verifiable.</p>
+                <p><strong>For generation:</strong> images, video, 3D, and interactive worlds can all be described as programs. If the reasoning moves into code, the generative model shrinks to a renderer. The open question is how light that renderer can be.</p>
+              </div>
+            </article>
+
+            <article class="thesis-card">
+              <div class="thesis-card__number" aria-hidden="true">03</div>
+              <div class="thesis-card__content">
+                <h3>Hardware Is Part of the Algorithm</h3>
+                <p>If the brain is shared, robot builders should build what is orthogonal to it: things that become <em>more</em> valuable with every model upgrade.</p>
                 <ol class="thesis-points">
-                  <li data-i18n="embodiment-compute">
-                    <strong>Compute must be built.</strong> Reaching AGI’s frontier may require vast populations of
-                    digital and physical agents—and therefore enormous compute. But fabs, power plants, and data
-                    centers must be physically constructed. <strong>Robots close the loop from intelligence to more
-                    compute, and back to more intelligence.</strong>
-                  </li>
-                  <li data-i18n="embodiment-science">
-                    <strong>Science moves at the speed of experiments.</strong> In biology, chemistry, and materials,
-                    if every hypothesis must wait for human hands and schedules, the entire learning loop remains
-                    <strong>capped by human experimental speed.</strong>
-                  </li>
-                  <li data-i18n="embodiment-learning">
-                    <strong>The physical world is an open-ended curriculum.</strong> Text is largely a static record
-                    of what humans have already captured. The world continually produces new states, actions,
-                    consequences, and unknowns—<strong>an effectively inexhaustible source of learning.</strong>
-                  </li>
+                  <li><strong>A body the model wants to call.</strong> Design hardware backward from the task and the supervision you can get. Expose it as a clean command line: arms, touch, even the factory. A factory is also a robot.</li>
+                  <li><strong>The best simulation of your own body and scene.</strong> Real-to-sim for the place you actually deploy.</li>
+                  <li><strong>A deployment flywheel.</strong> Failures in the field flow back into simulation and data. Deployment scale is verification capacity.</li>
                 </ol>
+                <p>Model, harness, and hardware are one system. Optimize them together.</p>
               </div>
             </article>
           </div>
+
+          <p class="thesis-card__conclusion"><strong>Why the physical world at all.</strong> Coding advanced fast because its rewards are verifiable and its output feeds the next generation of models. I want the same loop in physical production. Compute must be physically built: fabs, power plants, data centers. Science moves at the speed of experiments, and today that speed is capped by human hands. Text and code give models their priors; the physical world gives them an open-ended curriculum and the final test. The goal is an AutoResearch loop for the physical world. <strong>Build robots that help build better robots.</strong></p>
+        </section>
+
+        <span class="anchor" id="open-questions"></span>
+        <section>
+          <h2>Open Questions</h2>
+          <ul class="plain-list">
+            <li>How should reinforcement learning update System 0 and System 1/2 together, when today they are trained apart?</li>
+            <li>Model-based RL made locomotion efficient. Can it do the same for manipulation?</li>
+            <li>What actually blocks simulation at scale, and what keeps the sim-to-real gap open?</li>
+            <li>Does robot post-training need a very large model to generalize, given that deployment cannot afford one?</li>
+            <li>Are skills in the physical world multimodal?</li>
+          </ul>
         </section>
 
         <span class="anchor" id="news"></span>
         <section>
-          <h2 data-i18n="news-title">News</h2>
+          <h2>News</h2>
           <div class="news-box">
-            <p data-i18n="news-scone"><strong>[06.2026]</strong> Scone was accepted by CVPR 2026 as a Highlight paper.</p>
-            <p data-i18n="news-cof"><strong>[05.2026]</strong> CoF-T2I was accepted by ICML 2026.</p>
-            <p data-i18n="news-rlcot"><strong>[09.2025]</strong> Delving into RL for Image Generation with CoT was accepted by NeurIPS 2025.</p>
-            <p data-i18n="news-verify"><strong>[06.2025]</strong> Let's Verify and Reinforce Image Generation Step by Step appeared at CVPR 2025.</p>
-            <p data-i18n="news-mavis"><strong>[01.2025]</strong> MAVIS was accepted by ICLR 2025.</p>
+            <p><strong>[09.2026]</strong> Started my M.S. at Peking University.</p>
+            <p><strong>[06.2026]</strong> Scone was accepted by CVPR 2026 as a Highlight paper.</p>
+            <p><strong>[05.2026]</strong> CoF-T2I was accepted by ICML 2026.</p>
+            <p><strong>[09.2025]</strong> Delving into RL for Image Generation with CoT was accepted by NeurIPS 2025.</p>
+            <p><strong>[06.2025]</strong> Let's Verify and Reinforce Image Generation Step by Step appeared at CVPR 2025.</p>
+            <p><strong>[01.2025]</strong> MAVIS was accepted by ICLR 2025.</p>
           </div>
         </section>
 
         <span class="anchor" id="publications"></span>
         <section>
-          <h2 data-i18n="publications-title">Publications</h2>
-          <h3 data-i18n="publications-selected">Selected publications/preprints</h3>
+          <h2>Publications</h2>
+          <h3>Selected publications/preprints</h3>
 
           <div class="paper-box">
             <div class="paper-box__image">
@@ -185,8 +217,8 @@
               <p><strong>CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation</strong></p>
               <ul>
                 <li><strong>Chengzhuo Tong*</strong>, Mingkun Chang*, Shenglong Zhang, Yuran Wang, Cheng Liang, Zhizheng Zhao, Ruichuan An, Bohan Zeng, Yang Shi, Yifan Dai, Ziming Zhao, Guanbin Li, Pengfei Wan, Yuanxing Zhang, Wentao Zhang</li>
-                <li data-i18n="publication-cof-venue">International Conference on Machine Learning, 2026.</li>
-                <li data-i18n="publication-cof-links"><a href="https://arxiv.org/abs/2601.10061">[Paper]</a> <a href="https://cof-t2i.github.io/">[Project]</a></li>
+                <li>International Conference on Machine Learning, 2026.</li>
+                <li><a href="https://arxiv.org/abs/2601.10061">[Paper]</a> <a href="https://cof-t2i.github.io/">[Project]</a></li>
               </ul>
             </div>
           </div>
@@ -200,8 +232,8 @@
               <p><strong>Scone: Bridging Composition and Distinction in Subject-Driven Image Generation via Unified Understanding-Generation Modeling</strong></p>
               <ul>
                 <li>Yuran Wang*, Bohan Zeng*, <strong>Chengzhuo Tong</strong>, Wenxuan Liu, Yang Shi, Xiaochen Ma, Hao Liang, Yuanxing Zhang, Wentao Zhang</li>
-                <li data-i18n="publication-scone-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026. Highlight.</li>
-                <li><a href="https://arxiv.org/abs/2512.12675" data-i18n="publication-paper-label">[Paper]</a></li>
+                <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026. Highlight.</li>
+                <li><a href="https://arxiv.org/abs/2512.12675">[Paper]</a></li>
               </ul>
             </div>
           </div>
@@ -215,8 +247,8 @@
               <p><strong>Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO</strong></p>
               <ul>
                 <li><strong>Chengzhuo Tong</strong>, Ziyu Guo, Renrui Zhang, Wenyu Shan, Xinyu Wei, Zhenghao Xing, Hongsheng Li, Pheng-Ann Heng</li>
-                <li data-i18n="publication-rlcot-venue">Conference on Neural Information Processing Systems, 2025.</li>
-                <li><a href="https://arxiv.org/abs/2505.17017" data-i18n="publication-paper-label">[Paper]</a></li>
+                <li>Conference on Neural Information Processing Systems, 2025.</li>
+                <li><a href="https://arxiv.org/abs/2505.17017">[Paper]</a></li>
               </ul>
             </div>
           </div>
@@ -230,28 +262,38 @@
               <p><strong>Let's Verify and Reinforce Image Generation Step by Step</strong></p>
               <ul>
                 <li>Renrui Zhang*, <strong>Chengzhuo Tong*</strong>, Zhizheng Zhao*, Ziyu Guo*, Haoquan Zhang, Manyuan Zhang, Jiaming Liu, Peng Gao, Hongsheng Li</li>
-                <li data-i18n="publication-verify-venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.</li>
-                <li><a href="https://arxiv.org/abs/2501.13926" data-i18n="publication-paper-label">[Paper]</a></li>
+                <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.</li>
+                <li><a href="https://arxiv.org/abs/2501.13926">[Paper]</a></li>
               </ul>
             </div>
           </div>
 
+          <div class="paper-box">
+            <div class="paper-box__image">
+              <span class="badge badge--navy">ICLR 2025</span>
+              <img src="assets/paper-mavis.jpg" alt="MAVIS thumbnail">
+            </div>
+            <div class="paper-box__text">
+              <p><strong>MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine</strong></p>
+              <ul>
+                <li>Renrui Zhang, Xinyu Wei, Dongzhi Jiang, Ziyu Guo, Yichi Zhang, <strong>Chengzhuo Tong</strong>, Jiaming Liu, Aojun Zhou, Shanghang Zhang, Peng Gao, Hongsheng Li</li>
+                <li>International Conference on Learning Representations, 2025.</li>
+                <li><a href="https://arxiv.org/abs/2407.08739">[Paper]</a></li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <span class="anchor" id="miscellaneous"></span>
         <section>
-          <h2 data-i18n="miscellaneous-title">Let’s Connect</h2>
-          <p data-i18n="miscellaneous-body">
-            I’m always happy to discuss AGI, embodied intelligence, World Action Models, and how self-improving
-            systems can move from digital reasoning into physical action. If these questions resonate with you,
-            feel free to reach out by email or WeChat.
-          </p>
+          <h2>Let’s Connect</h2>
+          <p>I'm looking for people who have debugged real robots, people working on quadruped navigation in Beijing, and anyone who disagrees with the bets above and has evidence. Reach me on X (<a href="https://x.com/selfcarveddecay">@selfcarveddecay</a>), by email, or on WeChat.</p>
         </section>
       </article>
     </main>
 
     <footer class="footer">
-      <p data-i18n="footer">Copyright &copy; 2026 Chengzhuo Tong. Built for GitHub Pages.</p>
+      <p>Copyright &copy; 2026 Chengzhuo Tong. Built for GitHub Pages.</p>
     </footer>
   </body>
 </html>

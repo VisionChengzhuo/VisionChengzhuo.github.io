@@ -126,23 +126,23 @@ img {
   padding: 0.18rem;
 }
 
-.language-switcher__button {
-  appearance: none;
-  background: transparent;
-  border: 0;
+.nav .language-switcher__button {
   border-radius: 999px;
   color: var(--muted);
-  cursor: pointer;
-  font: inherit;
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1;
   min-width: 2.65rem;
   padding: 0.48rem 0.66rem;
+  text-align: center;
   transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
-.language-switcher__button.is-active {
+.language-switcher__button::after {
+  display: none;
+}
+
+.nav .language-switcher__button[aria-current="page"] {
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(22, 45, 72, 0.13);
   color: var(--navy);
@@ -207,6 +207,12 @@ img {
   font-size: 0.94rem;
   margin: 1rem 0;
   padding: 0.8rem 0;
+}
+
+.profile__motto {
+  color: var(--muted);
+  display: block;
+  margin-top: 0.2rem;
 }
 
 .profile__contact {
@@ -712,6 +718,11 @@ p {
 @media (max-width: 520px) {
   html {
     font-size: 14px;
+  }
+
+  .anchor {
+    height: 8.75rem;
+    margin-top: -8.75rem;
   }
 
   .layout {
